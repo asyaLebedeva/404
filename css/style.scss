@@ -67,3 +67,21 @@ $norm: 400;
       gap: 30px;
  }
 
+ @media (max-width: 480px) {
+   body {
+    max-width: 480px;
+   }
+ }
+
+ @media (max-width: 400px) {
+  body {
+   max-width: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+   max-width: 320px;
+  }
+}
+
