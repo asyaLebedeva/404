@@ -12,6 +12,10 @@ $norm: 400;
    color: $txt-color;
  }
 
+ .body {
+    overflow-x: hidden;
+ }
+
  .main {
   display: $grid;
     &__img {
@@ -30,11 +34,13 @@ $norm: 400;
       grid-area: string;
       font-size: 20px;
       font-weight: $bold;
+      @include use;
     }
 
     &__span {
       grid-area: substring;
       font-weight: $norm;
+      @include use;
     }
 
     &__btn {
@@ -56,11 +62,11 @@ $norm: 400;
   max-width: 100%;
   font-family: $fonts;
   text-align: $balance;
-   grid-template-columns: repeat(3, auto);
+   grid-template-columns: repeat(3, 1fr);
    grid-template-rows: auto;
    grid-template-areas:
       '. title .'
-      'pic pic pic'
+      '. pic .'
       '. string .'
       '. substring .'
       '. btn .';
@@ -71,6 +77,10 @@ $norm: 400;
    body {
     max-width: 480px;
    }
+
+   .container {
+    grid-template-columns: repeat(1, auto);
+  }
  }
 
  @media (max-width: 400px) {
