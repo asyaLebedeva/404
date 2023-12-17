@@ -4,11 +4,14 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title 404-error
+    link(rel="stylesheet" href="normalize.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap")
     link(rel="stylesheet" href="../css/style.css")
   body
     main
       .container
+        // picture.main__pic
+           source(src="../img/mini-dribbble_1.gif" media="(max-width: 480px)")
         img.main__img(src="../img/dribbble_1.gif" alt="Human hurts himself")
         h1.main__title 404
         p.main__txt Look like you're lost
